@@ -87,7 +87,7 @@ The IT helpdesk knowledge base covers **49 real enterprise scenarios** across:
 | Cloud Deployment | Amazon Bedrock AgentCore |
 | Memory | AgentCoreMemorySaver, AgentCoreMemoryStore |
 | LLM | Groq (LLaMA / GPT-OSS) |
-| Embeddings | HuggingFace — sentence-transformers/all-MiniLM-L6-v2 |
+| Embeddings | HuggingFace — sentence-transformers/all-MiniLM-L6-v2(Test) | Amazon Bedrock Embeddings (Production)
 | Vector Store | FAISS |
 | RAG Framework | LangChain |
 | Language | Python 3.13 |
@@ -113,8 +113,8 @@ pip install uv
 
 ```bash
 # Clone the repository
-git clone https://github.com/SanehLata/it-helpdesk-agent-bedrock-agentcore.git
-cd it-helpdesk-agent-bedrock-agentcore
+git clone https://github.com/SanehLata/IT_Support_AI_Agent 
+cd IT_Support_AI_Agent 
 
 # Install dependencies
 uv sync
