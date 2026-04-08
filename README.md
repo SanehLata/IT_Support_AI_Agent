@@ -87,7 +87,7 @@ The IT helpdesk knowledge base covers **49 real enterprise scenarios** across:
 | Cloud Deployment | Amazon Bedrock AgentCore |
 | Memory | AgentCoreMemorySaver, AgentCoreMemoryStore |
 | LLM | Groq (LLaMA / GPT-OSS) |
-| Embeddings | HuggingFace — sentence-transformers/all-MiniLM-L6-v2(Test) | Amazon Bedrock Embeddings (Production)
+| Embeddings | HuggingFace — sentence-transformers/all-MiniLM-L6-v2(Test) Amazon Bedrock Embeddings (Production)
 | Vector Store | FAISS |
 | RAG Framework | LangChain |
 | Language | Python 3.13 |
