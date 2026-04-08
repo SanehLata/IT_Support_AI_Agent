@@ -14,7 +14,7 @@ User Query
     ▼
 LangGraph Agent (Tool Orchestration)
     │
-    ├──► search_faq()           → FAISS Vector Store (HuggingFace Embeddings)
+    ├──► search_faq()           → FAISS Vector Store (HuggingFace Embeddings for local prototyping, Amazon Bedrock embeddings for production deployment)
     ├──► search_detailed_faq()  → Extended semantic search
     └──► reformulate_query()    → Aspect-focused query rewriting
     │
