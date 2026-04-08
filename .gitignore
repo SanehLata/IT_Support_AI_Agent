@@ -3,6 +3,10 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+.idea
+
+.bedrock_agentcore/
+
 # C extensions
 *.so
 
