@@ -241,6 +241,18 @@ The memory implementation uses two layers:
 
 ---
 
-## 📄 Licence
+## 📄 Learnings from the Project
+when I launched Bedrock Agentcore - 
 
-MIT Licence — see [LICENSE](LICENSE) for details.
+    agentcore launch --env GROQ_API_KEY=gsk_your_api_key
+                    
+it failed with error :
+
+    CodeBuild completed successfully 
+    CodeBuild project configuration saved    
+    Deploying to Bedrock AgentCore... ❌ Launch failed: An error occurred (ServiceQuotaExceededException) when calling the CreateAgentRuntime operation: maxImageSizeMb limit exceeded for account 075452627099. Please contact AWS Support for more information.
+    
+This is because container image (built via CodeBuild) was too large for AWS Bedrock AgentCore limits. I replaced HuggingFaceEmbeddings ❌ (pulls PyTorch + Transformers (~1–3GB)) and embedding model:"sentence-transformers/all-MiniLM-L6-v2" with AWS Bedrock embeddings.
+
+So, I initially used HuggingFace embeddings for local prototyping, but for production deployment on AWS AgentCore, I switched to API-based embeddings to reduce container size, improve scalability, and align with cloud-native architecture.
+
