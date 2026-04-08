@@ -153,6 +153,8 @@ agentcore launch --env GROQ_API_KEY=your_groq_api_key_here
 # Invoke the deployed agent
 agentcore invoke '{"prompt": "My VPN is not connecting after the latest update. What should I do?"}'
 ```
+Doesn't have a memory of previous conversation :
+<img width="1378" height="383" alt="image" src="https://github.com/user-attachments/assets/8dd4456b-dcea-480a-8a90-37afac95cabf" />
 
 ### Implementation 3 — Deploy with Persistent Memory
 
